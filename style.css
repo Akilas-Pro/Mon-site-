@@ -1,0 +1,211 @@
+/* ✅ Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease-in-out; /* Transition douce pour tous les éléments */
+}
+
+/* ✅ Fond général avec couleurs sobres et classe */
+body {
+    background: linear-gradient(135deg, #f0f0f0, #e0e0e0); /* Dégradé diagonal pour plus de profondeur */
+    color: #333;
+    text-align: center;
+    line-height: 1.6;
+    overflow-x: hidden; /* Empêche le défilement horizontal */
+}
+
+/* ✅ Conteneur principal */
+.container {
+    width: 90%;
+    max-width: 1200px; /* Plus grand conteneur pour les écrans larges */
+    margin: 40px auto; /* Marge supérieure et inférieure pour l'espace */
+    background: white;
+    padding: 40px; /* Plus de padding pour un aspect luxueux */
+    border-radius: 16px; /* Bords plus arrondis */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Ombre plus prononcée */
+}
+
+/* ✅ En-tête élégant */
+header {
+    background: linear-gradient(to right, #333, #222); /* Dégradé sombre */
+    color: white;
+    padding: 30px; /* Plus de padding */
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); /* Ombre plus marquée */
+    border-radius: 12px 12px 0 0; /* Bords arrondis seulement en haut */
+}
+
+header h1 {
+    font-size: 32px; /* Plus grand titre */
+    font-weight: 700; /* Gras plus prononcé */
+    letter-spacing: 1px; /* Espacement des lettres */
+}
+
+nav {
+    margin-top: 20px; /* Plus d'espace sous le titre */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px; /* Plus d'espace entre les liens */
+    font-weight: 600; /* Légèrement gras */
+    padding: 12px 20px; /* Plus de padding */
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transitions séparées */
+}
+
+nav a:hover {
+    background: #FFEA00; /* Jaune plus clair */
+    color: #333;
+}
+
+/* ✅ Boutons stylés avec effet classe */
+button, .btn {
+    display: inline-block;
+    background: linear-gradient(to right, #FFD700, #FFC300); /* Dégradé doré */
+    color: #222;
+    padding: 14px 22px; /* Plus de padding */
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px; /* Plus grande police */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transitions séparées */
+}
+
+button:hover, .btn:hover {
+    background: linear-gradient(to right, #C5A100, #B18F00); /* Dégradé doré plus foncé */
+    color: white;
+    transform: translateY(-3px); /* Légère élévation */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ✅ Produits avec un design épuré */
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Grille responsive */
+    gap: 30px; /* Plus d'espace entre les produits */
+    padding: 30px;
+}
+
+.product {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product:hover {
+    transform: translateY(-5px); /* Légère élévation */
+}
+
+.product img {
+    width: 100%;
+    height: 200px; /* Hauteur fixe */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* ✅ Détails d'un produit */
+.product-details {
+    background: #f9f9f9;
+    padding: 30px;
+    margin: 30px auto;
+    width: 70%; /* Plus large sur les écrans plus grands */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-details img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* ✅ Panier avec un style premium */
+.panier-container {
+    width: 90%;
+    margin: 30px auto;
+    background: #f8f8f8;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.panier-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.panier-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* ✅ Tableaux propres et professionnels */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background: white;
+    color: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+th, td {
+    padding: 16px; /* Plus de padding */
+    border: 1px solid #ddd;
+    text-align: left; /* Alignement à gauche */
+}
+
+th {
+    background: #333;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* ✅ Formulaires avec un style classe */
+form {
+    width: 100%;
+    max-width: 600px; /* Plus large formulaire */
+    margin: 30px auto;
+    padding: 30px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 14px; /* Plus de padding */
+    margin: 12px 0; /* Plus de marge */
+    border: 1px solid #ddd;
+    border-radius: 8}
+
+
+    footer {
+        text-align: center;
+        padding: 20px 0;
+        background: linear-gradient(to right, #6a11cb, #2575fc);
+        color: white;
+        margin-top: 450px;
+    }
